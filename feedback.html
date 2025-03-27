@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feedback - Luxury Scents</title>
+  
+  
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  
+  
+  <style>
+    body {
+      background-color: #616177;
+    }
+    
+    header {
+      background-color: #343a40;
+    }
+
+    .navbar-brand {
+      font-weight: bold;
+      font-size: 1.5rem;
+    }
+
+    .feedback-form {
+      background-color: #f3eeee;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    }
+    .feedback-form input, 
+
+    .feedback-form textarea { 
+
+      border-radius: 5px; 
+        background-color: #0d0d0e;
+        color: aliceblue;
+    } 
+
+ 
+
+    .feedback-form h2 {
+      margin-bottom: 20px;
+    }
+
+    .footer {
+      background-color: #343a40;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 30px;
+    }
+
+    .navbar-nav .nav-link {
+      font-weight: bold;
+      color: #f8f9fa;
+    }
+
+    .navbar-nav .nav-link:hover {
+      color: #ffc107;
+    }
+
+    .form-control {
+      border-radius: 5px;
+      box-shadow: none;
+    }
+  </style>
+</head>
+
+<body>
+  
+  
+  <header class="py-3">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#">Luxury Scents</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="luxury scents.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="products.html">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="feedback.html">Feedback</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  
+  <div class="container mt-5">
+    <div class="row">
+      
+      <div class="col-md-8 offset-md-2 feedback-form">
+        <h2>We'd Love Your Feedback!</h2>
+        <form action="submit-feedback.php" method="POST">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Your Email</label>
+            <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+          </div>
+
+          <div class="form-group">
+            <label for="feedback">Your Feedback</label>
+            <textarea class="form-control" id="feedback" name="feedback" rows="5" placeholder="Let us know how we can improve" required></textarea>
+          </div>
+
+          <button style="background-color: #0d0d0e;" type="submit" class="btn btn-primary btn-block">Submit Feedback</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  
+  <footer class="footer">
+    <p>&copy; 2025 Luxury Scents. All rights reserved.</p>
+    <p>Follow us on social media for updates and promotions!</p>
+  </footer>
+
+  
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.0/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
